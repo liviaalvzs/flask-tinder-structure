@@ -33,8 +33,8 @@ def reseta():
     database['pessoa'] = []
 
 def adiciona_interesse(id_interessado, id_alvo_de_interesse):
-    interessado = localiza_pessoa(id_interessado)
-    alvo_de_interesse = localiza_pessoa(id_alvo_de_interesse)
+    localiza_pessoa(id_interessado)
+    localiza_pessoa(id_alvo_de_interesse)
     (database['interesses'])[id_interessado].append(id_alvo_de_interesse)
     return database['interesses']
     
